@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/splashScreenFragment">
 
     <fragment
         android:id="@+id/scanDocumentFragment"
@@ -16,8 +16,48 @@
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" />
     <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.hacathon.view.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_welcomePageFragment"
+            app:destination="@id/welcomePageFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomePageFragment"
+        android:name="com.example.hacathon.view.WelcomePageFragment"
+        android:label="fragment_welcome_page"
+        tools:layout="@layout/fragment_welcome_page" >
+        <action
+            android:id="@+id/action_welcomePageFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomePageFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.hacathon.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.hacathon.view.RegistrationFragment"
+        android:label="fragment_regestration"
+        tools:layout="@layout/fragment_regestration" >
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
         android:id="@+id/mainFragment"
         android:name="com.example.hacathon.vm.MainFragment"
         android:label="fragment_main"
         tools:layout="@layout/fragment_main" />
+
 </navigation>

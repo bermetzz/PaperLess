@@ -1,5 +1,21 @@
 <resources>
-    <string name="app_name">Hacathon</string>
+    <string name="app_name">PaperLess</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="welcome_description">Von einzelnen Seiten bis hin zu ganzen Archiven – organisiert Ihre Dokumente</string>
+    <string name="anmelden">Anmelden</string>
+    <string name="regestrieren">Registrieren</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="loginPageWelcome">Welcome Back</string>
+    <string name="loginPageWelcomeDescription">Enter your credential for login</string>
+    <string name="loginPageForgotPass">Forgot password?</string>
+    <string name="loginPageNotHaveAcc">Dont have a account?</string>
+    <string name="signUpDescription">Create a account</string>
+    <string name="signUpUsernameHint">Username</string>
+    <string name="signUpRepeatPass">Repeat Password</string>
+    <string name="signUpAlreadyHaveAcc">Already have an account?</string>
 </resources>

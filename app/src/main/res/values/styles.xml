@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Widget.Theme.Hacathon.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:statusBarColor">@color/primary</item>
+    </style>
+</resources>
