@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.LoginFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="20dp"
+       >
+
+
+       <ImageView
+           android:id="@+id/loginPageLogo"
+           android:layout_width="100dp"
+           android:layout_height="25dp"
+           android:src="@drawable/logo_black"
+           android:contentDescription="@string/app_name"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+       <TextView
+           android:id="@+id/loginPageWelcome"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/loginPageLogo"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           android:text="@string/loginPageWelcome"
+           android:textSize="40sp"
+           android:textStyle="bold"
+           android:textColor="@color/text_color"
+           android:textAlignment="center"
+           android:layout_marginTop="100dp"
+           />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/loginPageWelcomeDescription"
+           android:textColor="@color/text_color"
+           app:layout_constraintTop_toBottomOf="@id/loginPageWelcome"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           android:text="@string/loginPageWelcomeDescription"
+           android:textAlignment="center"
+           android:textSize="14sp"
+           />
+
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/loginPageEmailEditText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:paddingHorizontal="10dp"
+           android:paddingVertical="15dp"
+           app:layout_constraintTop_toBottomOf="@id/loginPageWelcomeDescription"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           android:inputType="textEmailAddress"
+           android:layout_marginTop="20dp"
+           android:hint="@string/email"
+           android:drawableStart="@drawable/mail"
+           android:drawablePadding="10dp"
+           android:background="@drawable/all_rounded_style"
+           android:backgroundTint="@color/login_input_color"/>
+
+
+       <com.google.android.material.textfield.TextInputEditText
+           android:id="@+id/loginPagePasswordEditText"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:inputType="textPassword"
+           android:paddingHorizontal="10dp"
+           android:paddingVertical="15dp"
+           app:layout_constraintTop_toBottomOf="@id/loginPageEmailEditText"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           android:layout_marginTop="20dp"
+           android:hint="@string/password"
+           android:drawableStart="@drawable/pass"
+           android:drawablePadding="10dp"
+           android:background="@drawable/all_rounded_style"
+           android:backgroundTint="@color/login_input_color"/>
+
+
+       <com.google.android.material.button.MaterialButton
+           android:id="@+id/loginPageLoginButton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toBottomOf="@id/loginPagePasswordEditText"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           android:layout_marginTop="20dp"
+           android:text="@string/anmelden"
+           android:paddingVertical="15dp"
+           app:cornerRadius="10dp"
+           android:backgroundTint="@color/primary"/>
+
+
+       <TextView
+           android:id="@+id/loginPageForgotPasswordButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/loginPageForgotPass"
+           app:layout_constraintTop_toBottomOf="@id/loginPageLoginButton"
+           app:layout_constraintLeft_toLeftOf="parent"
+           android:textStyle="bold"
+           android:textColor="@color/text_color"
+           android:layout_marginTop="35dp"
+           android:paddingVertical="20dp"/>
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          app:layout_constraintTop_toBottomOf="@id/loginPageForgotPasswordButton"
+          app:layout_constraintLeft_toLeftOf="parent"
+          android:layout_height="wrap_content">
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/loginPageSignUpText"
+              app:layout_constraintTop_toTopOf="parent"
+              android:text="@string/loginPageNotHaveAcc"
+              android:paddingVertical="20dp"
+              app:layout_constraintLeft_toLeftOf="parent"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/loginPageSignUpButton"
+              android:text="@string/regestrieren"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintLeft_toRightOf="@id/loginPageSignUpText"
+              android:paddingHorizontal="10dp"
+              android:paddingVertical="20dp"
+              android:textStyle="bold"
+              android:textColor="@color/primary"/>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
