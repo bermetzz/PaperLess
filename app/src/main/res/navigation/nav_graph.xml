@@ -55,4 +55,9 @@
             android:id="@+id/action_registrationFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+        android:id="@+id/mainFragment"
+        android:name="com.example.hacathon.vm.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+
 </navigation>
