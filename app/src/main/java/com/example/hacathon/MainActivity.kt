@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         // NavController
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
-        val navController = navHostFragment.navController
+        navHostFragment.navController
     }
 
     // обработка кнопки Назад
